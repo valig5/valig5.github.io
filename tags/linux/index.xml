@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Linux on 5ive&#39;s blog</title>
+    <link>https://valig5.github.io/tags/linux/</link>
+    <description>Recent content in Linux on 5ive&#39;s blog</description>
+    <image>
+      <url>https://valig5.github.io/papermod-cover.png</url>
+      <link>https://valig5.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 06 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://valig5.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用Archinstall脚本安装Arch Linux</title>
+      <link>https://valig5.github.io/post/archlinux-install/</link>
+      <pubDate>Fri, 06 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://valig5.github.io/post/archlinux-install/</guid>
+      <description>我向来是觉得Archlinux的安装特别麻烦，它不像Gentoo那样可以自定义编译和安装喜欢的功能，提高软件运行的性能。
+它的安装过程也跟其他发行版并没有什么本质太大的区别，同样是设置键盘布局、语言、硬盘分区、安装软件、配置fstab、安装引导。其他发行版说详细了也是这样，只不过Arch是默认没做脚本安装罢了
+因此Archinstall脚本一出来我是特别高兴的，本文也是基于此脚本详述。
+安装前的准备 U盘启动 准备一个大牌子的U盘（杂牌U盘在刻录时容易出现问题），安装Ventoy ，并把下载好的ArchISO拖进U盘
+重启，打开电脑的BIOS并设置U盘启动项为第一位
+联网 ArchISO在启动时都会自动尝试连接网络，先用ping命令看看有无网络，如果能ping通那此步可以跳过
+ping 163.com
+设置无线网络 通常有线网络都不需要设置，如果你使用的是无线网络，可以按以下步骤连接WiFi
+ip a # 查看你的无线网卡名字
+rfkill unblock wifi # 解锁WiFi功能
+ip link set &amp;lt;网卡名&amp;gt; up # 激活网卡
+iwctl # 进入无线网络设置
+station &amp;lt;网卡名&amp;gt; scan # 扫描无线网络
+station &amp;lt;网卡名&amp;gt; connect &amp;lt;SSID&amp;gt; # 连接WiFi并输入密码
+station &amp;lt;网卡名&amp;gt; show # 查看是否连接成功
+exit # 退出无线网络设置
+如果这样都没法联网，那么还有一个终极技能，电脑USB连接手机开启网络共享吧！
+安装系统前必要的设置 打开pacman的配置文件
+nano /etc/pacman.conf
+找到#ParellelDownload = 5一行，把前面的#号删掉取消注释，此选项可以提高安装系统的速度
+找到#[multilib]一行与下面一行一并取消掉注释，可以安装更多的软件
+pacman -Sy archlinux-keyring 更新签名以免等会儿安装时出现问题
+安装系统 archinstall 运行安装脚本
+mirror region为China 选择镜像源以提高下载速度</description>
+    </item>
+    
+  </channel>
+</rss>

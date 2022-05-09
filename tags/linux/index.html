@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Linux | 5ive&#39;s blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
+<meta name="author" content="Theme PaperMod">
+<link rel="canonical" href="https://valig5.github.io/tags/linux/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.ec8da366ca2fb647537ccb7a8f6fa5b4e9cd3c7a0d3171dd2d3baad1e49c8bfc.css" integrity="sha256-7I2jZsovtkdTfMt6j2&#43;ltOnNPHoNMXHdLTuq0eSci/w=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://valig5.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://valig5.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://valig5.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://valig5.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://valig5.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://valig5.github.io/tags/linux/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Linux" />
+<meta property="og:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://valig5.github.io/tags/linux/" /><meta property="og:image" content="https://valig5.github.io/papermod-cover.png"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://valig5.github.io/papermod-cover.png"/>
+
+<meta name="twitter:title" content="Linux"/>
+<meta name="twitter:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"/>
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://valig5.github.io/" accesskey="h" title="5ive&#39;s blog (Alt + H)">5ive&#39;s blog</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://valig5.github.io/archives/" title="归档 / Archives">
+                    <span>归档 / Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://valig5.github.io/categories/" title="分类 / Categories">
+                    <span>分类 / Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://valig5.github.io/search/" title="搜索 / Search">
+                    <span>搜索 / Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://valig5.github.io/tags/" title="标签 / Tags">
+                    <span>标签 / Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://valig5.github.io/">主页</a>&nbsp;»&nbsp;<a href="https://valig5.github.io/tags/">Tags</a></div>
+  <h1>
+    Linux
+    <a href="index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>用Archinstall脚本安装Arch Linux
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>我向来是觉得Archlinux的安装特别麻烦，它不像Gentoo那样可以自定义编译和安装喜欢的功能，提高软件运行的性能。
+它的安装过程也跟其他发行版并没有什么本质太大的区别，同样是设置键盘布局、语言、硬盘分区、安装软件、配置fstab、安装引导。其他发行版说详细了也是这样，只不过Arch是默认没做脚本安装罢了
+因此Archinstall脚本一出来我是特别高兴的，本文也是基于此脚本详述。
+安装前的准备 U盘启动 准备一个大牌子的U盘（杂牌U盘在刻录时容易出现问题），安装Ventoy ，并把下载好的ArchISO拖进U盘
+重启，打开电脑的BIOS并设置U盘启动项为第一位
+联网 ArchISO在启动时都会自动尝试连接网络，先用ping命令看看有无网络，如果能ping通那此步可以跳过
+ping 163.com
+设置无线网络 通常有线网络都不需要设置，如果你使用的是无线网络，可以按以下步骤连接WiFi
+ip a # 查看你的无线网卡名字
+rfkill unblock wifi # 解锁WiFi功能
+ip link set &lt;网卡名&gt; up # 激活网卡
+iwctl # 进入无线网络设置
+station &lt;网卡名&gt; scan # 扫描无线网络
+station &lt;网卡名&gt; connect &lt;SSID&gt; # 连接WiFi并输入密码
+station &lt;网卡名&gt; show # 查看是否连接成功
+exit # 退出无线网络设置
+如果这样都没法联网，那么还有一个终极技能，电脑USB连接手机开启网络共享吧！
+安装系统前必要的设置 打开pacman的配置文件
+nano /etc/pacman.conf
+找到#ParellelDownload = 5一行，把前面的#号删掉取消注释，此选项可以提高安装系统的速度
+找到#[multilib]一行与下面一行一并取消掉注释，可以安装更多的软件
+pacman -Sy archlinux-keyring 更新签名以免等会儿安装时出现问题
+安装系统 archinstall 运行安装脚本
+mirror region为China 选择镜像源以提高下载速度...</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-05-06 00:00:00 +0000 UTC'>May 6, 2022</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;Five</footer>
+  <a class="entry-link" aria-label="post link to 用Archinstall脚本安装Arch Linux" href="https://valig5.github.io/post/archlinux-install/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://valig5.github.io/">5ive&#39;s blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

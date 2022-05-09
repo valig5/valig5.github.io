@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blog on 5ive&#39;s blog</title>
+    <link>https://valig5.github.io/tags/blog/</link>
+    <description>Recent content in Blog on 5ive&#39;s blog</description>
+    <image>
+      <url>https://valig5.github.io/papermod-cover.png</url>
+      <link>https://valig5.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 06 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://valig5.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用github和hexo框架搭建属于自己的个人博客</title>
+      <link>https://valig5.github.io/post/github-pages-hexo/</link>
+      <pubDate>Fri, 06 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://valig5.github.io/post/github-pages-hexo/</guid>
+      <description>本文主要是讲述我的这个博客是怎么实现的，才了不少坑才弄好，前端要做的东西可真麻烦啊，还是后端好。
+开始前的准备工作 GitHub 新建一个GitHub帐号 此处不赘述过程
+新建一个repository repository的名字必须为用户名.github,io
+Nodejs Debian 系 sudo apt install nodejs npm
+RedHat 系 sudo dnf install nodejs npm
+Arch 系 sudo pacman -S nodejs npm
+Windows 自己百度下载
+在本地电脑搭建博客框架 安装Hexo npm install -g hexo-cli
+初始化博客 在一个你喜欢的地址新建一个空的文件夹，文件夹随便起个你喜欢的名字（最好英文），在文件夹里打开终端运行 hexo init
+看看你初始化后的博客 hexo g &amp;amp;&amp;amp; hexo s 在终端中按住ctrl选中链接就可以打开看看了
+在配置文件中修改github部署位置 `deploy:
+type: git
+repo: 这里填入你之前在GitHub上创建仓库的完整路径，记得加上.git
+branch: 填入你喜欢的分支名`
+GitHub Pages 设置自定义域名 打开Repository -&amp;gt; Setting -&amp;gt; Pages 里面就有
+在域名设置网站处解析 选择你想要设置的域名 -&amp;gt; 快速解析 -&amp;gt; 直接复制github用户名.</description>
+    </item>
+    
+  </channel>
+</rss>
